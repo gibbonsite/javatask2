@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<papers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.poleschuk.com/Papers file:///files/papers.xsd">
+  <paper id="p01" xsi:type="paper">
+    <title>Народная газета</title>
+    <type>Paper</type>
+    <page-size>32</page-size>
+    <coloured>true</coloured>
+    <has-subscription-index>true</has-subscription-index>
+    <periodicity>P7D</periodicity>
+  </paper>
+  <paper id="p02" xsi:type="paper">
+    <title>Знамя юности</title>
+    <type>Paper</type>
+    <page-size>28</page-size>
+    <coloured>true</coloured>
+    <has-subscription-index>true</has-subscription-index>
+    <periodicity>P7D</periodicity>
+  </paper>
+  <paper id="p03" xsi:type="paper">
+    <title>Сельская газета</title>
+    <type>Paper</type>
+    <page-size>16</page-size>
+    <coloured>true</coloured>
+    <has-subscription-index>true</has-subscription-index>
+    <periodicity>P2D</periodicity>
+  </paper>
+  <paper id="p04" xsi:type="paper">
+    <title>Союзное вече</title>
+    <type>Paper</type>
+    <page-size>26</page-size>
+    <coloured>true</coloured>
+    <has-subscription-index>false</has-subscription-index>
+    <periodicity>P7D</periodicity>
+  </paper>
+  <paper id="p05" xsi:type="paper">
+    <title>Беларусь сегодня</title>
+    <type>Paper</type>
+    <page-size>32</page-size>
+    <coloured>true</coloured>
+    <has-subscription-index>true</has-subscription-index>
+    <periodicity>P7D</periodicity>
+  </paper>
+  <paper id="p06" xsi:type="paper">
+    <title>Союз</title>
+    <type>Paper</type>
+    <page-size>26</page-size>
+    <coloured>true</coloured>
+    <has-subscription-index>false</has-subscription-index>
+    <periodicity>P7D</periodicity>
+  </paper>
+  
+  <paper id="p11" xsi:type="magazine">
+    <title>большой</title>
+    <type>Magazine</type>
+    <page-size>32</page-size>
+    <coloured>true</coloured>
+    <glossy>true</glossy>
+    <has-subscription-index>false</has-subscription-index>
+    <periodicity>P1M</periodicity>
+  </paper>
+  <paper id="p12" xsi:type="magazine">
+    <title>КЛАСС</title>
+    <type>Magazine</type>
+    <page-size>28</page-size>
+    <coloured>true</coloured>
+    <glossy>true</glossy>
+    <has-subscription-index>false</has-subscription-index>
+    <periodicity>P7D</periodicity>
+  </paper>
+  <paper id="p13" xsi:type="magazine">
+    <title>teenVOGUE</title>
+    <type>Magazine</type>
+    <page-size>40</page-size>
+    <coloured>true</coloured>
+    <glossy>true</glossy>
+    <has-subscription-index>false</has-subscription-index>
+    <periodicity>P1M</periodicity>
+  </paper>
+  <paper id="p14" xsi:type="magazine">
+    <title>Elle Girl</title>
+    <type>Magazine</type>
+    <page-size>32</page-size>
+    <coloured>true</coloured>
+    <glossy>true</glossy>
+    <has-subscription-index>true</has-subscription-index>
+    <periodicity>P1M</periodicity>
+  </paper>
+  <paper id="p15" note="GLAMOUR journal" xsi:type="magazine">
+    <title>GLAMOUR</title>
+    <type>Magazine</type>
+    <page-size>26</page-size>
+    <coloured>true</coloured>
+    <glossy>true</glossy>
+    <has-subscription-index>true</has-subscription-index>
+    <periodicity>P1M</periodicity>
+  </paper>
+  <paper id="p16" xsi:type="magazine">
+    <title>VANITY FAIR</title>
+    <type>Magazine</type>
+    <page-size>40</page-size>
+    <coloured>true</coloured>
+    <glossy>true</glossy>
+    <has-subscription-index>false</has-subscription-index>
+    <periodicity>P1M</periodicity>
+  </paper>
+
+  <paper id="p21" xsi:type="booklet">
+    <title>PROspekt</title>
+    <type>Booklet</type>
+    <page-size>1</page-size>
+    <coloured>true</coloured>
+    <glossy>true</glossy>
+    <topic>Типография</topic>
+  </paper>
+  <paper id="p22" xsi:type="booklet">
+    <title>SVIWT. IT компания</title>
+    <type>Booklet</type>
+    <page-size>1</page-size>
+    <coloured>true</coloured>
+    <glossy>false</glossy>
+    <topic>Информационные технологии</topic>
+  </paper>
+  <paper id="p23" xsi:type="booklet">
+    <title>Время принимать ВЕРНОЕ РЕШЕНИЕ</title>
+    <type>Booklet</type>
+    <page-size>1</page-size>
+    <coloured>true</coloured>
+    <glossy>false</glossy>
+    <topic>Маркетинг</topic>
+  </paper>
+  <paper id="p24" xsi:type="booklet">
+    <title>Сколково</title>
+    <type>Booklet</type>
+    <page-size>1</page-size>
+    <coloured>true</coloured>
+    <glossy>true</glossy>
+    <topic>Наука</topic>
+  </paper>
+</papers>

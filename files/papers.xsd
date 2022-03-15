@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.poleschuk.com/Papers"
+    xmlns:tns="http://www.poleschuk.com/Papers"
+    elementFormDefault="qualified">
+    
+    <element name="papers">
+      <complexType>
+			<sequence>
+				<element name="paper" type="tns:PaperIssue"/>
+			</sequence>
+		</complexType>
+	</element>
+		
+    <complexType name="PaperIssue" abstract="true">
+      <sequence>
+        <element name="title">
+          <simpleType>
+            <restriction base="string">
+              <minLength value="4"></minLength>
+              <maxLength value="40"></maxLength>
+            </restriction>
+          </simpleType>
+        </element>
+        <element name="paper-type" type="tns:PaperType" />
+        <element name="coloured" type="boolean" />
+        <element name="page-size">
+          <simpleType>
+            <restriction base="integer">
+              <minInclusive value="1"></minInclusive>
+              <maxInclusive value="1200"></maxInclusive>
+            </restriction>
+          </simpleType>
+        </element>
+      </sequence>
+      <attribute name="id" use="required" type="tns:PaperID" />
+      <attribute name="note" use="optional" type="string" default="Some information about the paper." />
+    </complexType>
+
+	<complexType name="Paper">
+	  <complexContent>
+	    <extension base="tns:PaperIssue">
+	      <sequence>
+    	    <element name="has-subscription-index" type="boolean" />
+	        <element name="periodicity" type="duration" default="P1M" />
+	      </sequence>
+	    </extension>
+	  </complexContent>
+	</complexType>
+	
+    <complexType name="Magazine">
+	  <complexContent>
+	    <extension base="tns:PaperIssue">
+	      <sequence>
+			<element name="glossy" type="boolean" />
+    	    <element name="has-subscription-index" type="boolean" />
+	        <element name="periodicity" type="duration" default="P1M" />
+	      </sequence>
+	    </extension>
+	  </complexContent>
+	</complexType>
+
+    <complexType name="Booklet">
+	  <complexContent>
+	    <extension base="tns:PaperIssue">
+	      <sequence>
+	      	<element name="glossy" type="boolean" />
+	      	<element name="topic" type="string" />
+	      </sequence>
+	    </extension>
+	  </complexContent>
+	</complexType>
+	
+  <simpleType name="PaperType">
+    <restriction base="string">
+      <enumeration value="Paper" />
+      <enumeration value="Magazine" />
+      <enumeration value="Booklet" />
+    </restriction>
+  </simpleType>    
+    
+  <simpleType name="PaperID">
+    <restriction base="ID">
+      <pattern value="p\d{1,4}" />
+    </restriction>
+  </simpleType>
+ </schema>
